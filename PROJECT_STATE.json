@@ -1,0 +1,119 @@
+{
+  "handoff_request_date_jst": "2026-10-17",
+  "latest_release_date": "2026-10-03",
+  "app": {
+    "name": "くるりヘア",
+    "package": "jp.yaegaki.kururihair",
+    "versionName": "1.1.0",
+    "versionCode": 10100,
+    "minSdk": 26,
+    "targetSdk": 35,
+    "dataSchema": 1
+  },
+  "concept": "QTVR Object style view of real photographs of a child’s hairstyle; no generated 3D model",
+  "source_directory": "project/kururi-hair",
+  "latest_apk": "releases/kururi-hair-1.1.0.apk",
+  "original_source_archive": "archives/kururi-hair-1.1.0-source.zip",
+  "apk_sha256": "ca820df9f11a71cab06ea39205e733fe10435372df5a6d4b83d6017ab4e00596",
+  "signing": {
+    "keystore": "project/kururi-hair/signing/kururi-personal.jks",
+    "credentials_file": "private/SIGNING_INFO-ja.txt",
+    "certificate_sha256": "081a9477c8c8a1997d6d3a376566fdd2102a984f89550095fe9eda760fce0d20",
+    "keep_key_and_package_for_updates": true
+  },
+  "requirements": [
+    {
+      "id": "R001",
+      "description": "Android APK",
+      "user_message": "U001",
+      "status": "implemented"
+    },
+    {
+      "id": "R002",
+      "description": "Multi-angle hairstyle photographs",
+      "user_message": "U001",
+      "status": "implemented"
+    },
+    {
+      "id": "R003",
+      "description": "QTVR Object style drag interaction",
+      "user_message": "U001",
+      "status": "implemented"
+    },
+    {
+      "id": "R004",
+      "description": "No AI-generated 3D model required",
+      "user_message": "U001",
+      "status": "respected"
+    },
+    {
+      "id": "R005",
+      "description": "Capture direction and framing guidance",
+      "user_message": "U001",
+      "status": "implemented"
+    },
+    {
+      "id": "R006",
+      "description": "Self-contained interactive HTML with embedded images",
+      "user_message": "U002",
+      "status": "implemented"
+    },
+    {
+      "id": "R007",
+      "description": "Correct camera orientation",
+      "user_message": "U003",
+      "status": "fix_implemented_device_confirmation_pending"
+    },
+    {
+      "id": "R008",
+      "description": "Video recording and frame extraction",
+      "user_message": "U004",
+      "status": "implemented_device_confirmation_pending"
+    },
+    {
+      "id": "R009",
+      "description": "Optional automatic shutter at a suitable moment",
+      "user_message": "U004",
+      "status": "not_implemented"
+    },
+    {
+      "id": "R010",
+      "description": "Complete development handoff ZIP with concept and requests",
+      "user_message": "U005",
+      "status": "this_bundle"
+    }
+  ],
+  "plans": {
+    "easy": 9,
+    "standard": 17,
+    "smooth": 25
+  },
+  "technology": [
+    "Java",
+    "Camera2",
+    "MediaMetadataRetriever",
+    "VideoView",
+    "offline WebView",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Storage Access Framework"
+  ],
+  "historical_verification": {
+    "core_tests": 7,
+    "camera_calculation_checks": 344,
+    "browser_ui_checks": 48,
+    "signature_v2_v3_verified": true,
+    "native_android_bridge_mocked_in_browser_tests": true
+  },
+  "physical_android_camera_and_video_verified": false,
+  "new_apk_built_for_this_handoff": false,
+  "device_user_records_included": false,
+  "external_api_keys_required": false,
+  "git_repository_initialized": false,
+  "notes": [
+    "Automatic shutter and direction inference are not implemented.",
+    "Original temporary recording is deleted after the frame-selection session. Imported source video is not changed.",
+    "The entire handoff archive contains a private signing key and a user-provided photograph; do not publish it."
+  ]
+}

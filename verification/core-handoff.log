@@ -1,0 +1,15 @@
+✔ every plan contains a complete orbit, optional upper orbit and one top image (1.433028ms)
+✔ horizontal dragging wraps around and visits each saved frame (0.650417ms)
+✔ vertical drag moves from normal height to upper ring, top and back, preserving yaw (0.349525ms)
+✔ sparse rings skip missing directions and missing elevations (0.303446ms)
+✔ empty and single-photo sessions remain usable (0.223799ms)
+✔ front, child right, back and child left are unambiguously mapped (0.270078ms)
+✔ backup metadata rejects duplicate records, invalid directions and path traversal (1.765082ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 98.975345

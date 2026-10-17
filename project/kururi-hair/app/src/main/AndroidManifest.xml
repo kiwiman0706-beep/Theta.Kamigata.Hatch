@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.yaegaki.kururihair">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false" />
+    <application android:label="くるりヘア" android:icon="@drawable/ic_launcher" android:theme="@style/AppTheme"
+        android:allowBackup="false" android:usesCleartextTraffic="false" android:largeHeap="false"
+        android:supportsRtl="true">
+        <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CaptureActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".VideoFrameActivity" android:exported="false" android:screenOrientation="portrait" />
+        <provider android:name=".VideoFilesProvider" android:authorities="jp.yaegaki.kururihair.video"
+            android:exported="false" android:grantUriPermissions="true" />
+    </application>
+</manifest>

@@ -1,0 +1,16 @@
+# Private handoff material — never commit (public repository)
+private/
+references/
+archives/
+**/signing/
+**/*.jks
+**/*.keystore
+**/*.p12
+**/.env
+**/.env.*
+# Build / test output
+project/kururi-hair/build/
+project/kururi-hair/dist/
+**/node_modules/
+**/__pycache__/
+*.idsig

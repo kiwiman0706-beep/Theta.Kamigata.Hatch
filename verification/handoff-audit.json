@@ -1,0 +1,29 @@
+{
+  "app_unchanged": true,
+  "original_source_files_matched": 24,
+  "apk_bytes": 82723,
+  "apk_sha256": "ca820df9f11a71cab06ea39205e733fe10435372df5a6d4b83d6017ab4e00596",
+  "apk_assets_match_source": true,
+  "native_classes_present": true,
+  "keystore_certificate_matches_apk_v2_certificate": true,
+  "certificate_sha256": "081a9477c8c8a1997d6d3a376566fdd2102a984f89550095fe9eda760fce0d20",
+  "full_apk_signature_verification_rerun_for_handoff": false,
+  "full_apk_signature_verification_previously_reported": true,
+  "tests_rerun_for_handoff": [
+    {
+      "name": "core",
+      "passed": true,
+      "exit_code": 0,
+      "log": "verification/core-handoff.log"
+    },
+    {
+      "name": "camera_geometry",
+      "passed": true,
+      "exit_code": 0,
+      "log": "verification/camera_geometry-handoff.log"
+    }
+  ],
+  "browser_ui_tests_rerun_for_handoff": false,
+  "historical_browser_ui_checks": 48,
+  "physical_android_camera_video_tested": false
+}

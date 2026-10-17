@@ -1,0 +1,13 @@
+{
+  "checks": 48,
+  "passed": true,
+  "jsErrors": [],
+  "viewports": [
+    "320x640",
+    "390x844",
+    "412x915",
+    "800x1280",
+    "1280x800"
+  ],
+  "scope": "Browser UI, HTML export and mocked photo/video bridges; physical Android camera and video decoding untested"
+}
